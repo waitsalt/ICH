@@ -1,0 +1,6 @@
+email:
+  username: "admin@eastnousoul.top"
+  password: "EastNoSoul1234"
+  secure: "tls"
+  host: "smtpdm.aliyun.com"
+  port: 465
