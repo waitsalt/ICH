@@ -7,7 +7,7 @@ use crate::{
 };
 
 pub async fn delete(user_claim: UserClaim, Path(user_id): Path<i64>) -> AppResult<()> {
-    if user_claim.data.user_id != user_id {
+    if user_claim.data.user_id != user_id || user_claim.data.user_identity != 0 {
         return Err(AppError::InvalidToken);
     }
     let pool = database_connect();

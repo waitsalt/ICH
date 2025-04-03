@@ -42,6 +42,14 @@ pub struct Email {
 }
 
 #[derive(Debug, Deserialize)]
+pub struct Ai {
+    pub provider: String,
+    pub model: String,
+    pub api_key: String,
+    pub base_url: String,
+}
+
+#[derive(Debug, Deserialize)]
 pub struct Config {
     pub server: Server,
     pub database: Database,
@@ -49,6 +57,7 @@ pub struct Config {
     pub logger: Logger,
     pub auth: Auth,
     pub email: Email,
+    pub ai: Ai,
 }
 
 impl Config {

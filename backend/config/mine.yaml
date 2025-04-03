@@ -4,3 +4,9 @@ email:
   secure: "tls"
   host: "smtpdm.aliyun.com"
   port: 465
+
+ai:
+  provider: "deepseek"
+  api_key: "sk-b7a560ffe9104d22819ecd1b701f1c90"
+  base_url: "https://api.deepseek.com"
+  model: "deepseek-chat"
